@@ -124,6 +124,8 @@
             <p>Contact us if you would like to ask about one of our tours.</p>
             <p>Interested in a tour? Please contact us using the following below.</p>
 
+
+
 <p><strong>Email:</strong> <a href="mailto:sample-email@gmail.com">sample-email@gmail.com</a></p>
 <p><strong>Contact #:</strong> 000-000-000</p>
 
@@ -131,8 +133,41 @@
          <form>
          <label>Your name{required}</name>:</label>
          <input type="text" name="your-name">
-     <br><br>
-             
+     <br>
+     <br>
+                <form>
+         <label>Email{required}</name>:</label>
+         <input type="text" name="Email">
+     <br>
+     <br>
+    <form action="#contact" method="get">
+         <label for ="tour-choice">tour(required)</label>
+         <select id="tour-choice" name="tour_choice" type="text">
+     
+            <option value="choose tour">choose tour</option>
+            <option value="taal heritage ">taal heritage </option>
+            <option value="beach tour">beach tour</option>
+            <option value="batangas nature tour">batangas nature tour</option>
+     
+        </select>
+     </form>
+            <br>
+     
+        <label for="message (optional)">message (optional) </label>      
+        <textarea id="message (optional)" name=message (optional) rows="3" cols="38"></textarea>
+     
+     
+     
+     <fieldset>
+        <legend>Preferred Contact Method:</legend>
+        <input type="radio" id="contact-email" name="contact-method" value="email" required>
+        <label for="contact-email">Email</label><br>
+        <input type="radio" id="contact-phone" name="contact-method" value="phone">
+        <label for="contact-phone">Phone</label><br>
+    </fieldset>
+    <br>
+ <button type="submit">check demo form</button>
+</br>
 <li><a href="#contact">Contacts</a></li>
 
 </section>

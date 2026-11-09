@@ -3,198 +3,284 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lakbay Batangas Tours</title> 
-    <link rel="stylesheet" href="css/style.css">
 
+    <title>LAKBAY BATANGAS TOURS</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
 <header>
-    <h1>Lakbay Batangas Tours</h1>
+    <h1>LAKBAY BATANGAS TOURS</h1>
+
     <nav aria-label="Main Navigation">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#packages">Tour Packages</a></li>
-            <li><a href="#why">Why Choose Us</a></li>
-            <li><a href="#contact">Contacts</a></li>
+        <ul class="nav-links">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#tour">TOUR PACKAGES</a></li>
+            <li><a href="#why">WHY CHOOSE US</a></li>
+            <li><a href="#contact">CONTACT</a></li>
         </ul>
     </nav>
 </header>
 
-<section id="home">
-    <h2>Welcome to Lakbay Batangas Tours</h2>
-    <p>Discover the beauty of Batangas — home to stunning beaches, historic landmarks, and delicious local cuisine. Let us guide you on an unforgettable journey!</p>
-</section>
+<main>
 
-   
+    <!-- HOME -->
+    <section id="home">
+        <h2>HOME</h2>
+        <p>WELCOME TO LAKBAY BATANGAS</p>
+        <p>Discover the beauty of Batangas through its beaches,
+        nature, and historical destinations.</p>
 
+        <a href="#tour">Explore Our Tour Packages</a>
+    </section>
 
-<!-- ABOUT US SECTION -->
-<section id="about">
-  <h2>About Us</h2>
- <p>Lakbay Batangas Tours is a local travel agency dedicated to showcasing the best of Batangas. We offer safe, affordable, and memorable travel experiences for everyone.</p>
-  <h3>About Our Featured Tours</h3>
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>ABOUT</h2>
+        <p>Discover the beauty of Batangas.</p>
 
-  
+        <figure>
+            <img
+                src="assets/images/taal-lake.jpg"
+                alt="Scenic view of Taal Lake in Batangas"
+                width="1400px"
+                height="400px">
 
-    <img src="assets/taal-lake.jpg" width="380" height="285">
-    <figcaption>Taal Lake, one of the beauties you can discover in Batangas.</figcaption>
-  <p>Photo by:<a href="https://commons.wikimedia.org/wiki/File:Taal_Lake.jpg">talynhaga</a>|<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
+            <figcaption>
+                Taal Lake: one of the beautiful landscapes visitors
+                can discover in Batangas.
+            </figcaption>
+        </figure>
 
-  <h3>Featured Tour Packages</h3>
-  <h4>Taal Heritage Tour</h4>
-  <p>Learne about local culture and historic places.</p>
-  <p>Questions?Visit the <a href="#contact">Contacts</a>section to inquire about tours</p>
-</section>
+        <p>
+            Photo by:
+            <a href="https://commons.wikimedia.org/wiki/File:Taal_Lake.jpg">
+                Talynhaga
+            </a>
+            |
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/">
+                CC BY-SA 4.0
+            </a>
+        </p>
+    </section>
 
-</section>
+    <!-- FEATURED TOUR -->
+    <section id="featured">
+        <h2>Featured Tour Packages</h2>
 
-<section id="packages">
-    <h2>Tour Packages</h2>
-    <h3>TOUR1:Beach Getaway</h3>
-    <p>Visit the pristine beaches of Laiya and Nasugbu. Includes round-trip transport and guide.</p>
+        <article class="taal-heritage">
+            <h3>Taal Heritage Tour</h3>
 
-<li><a href="#contact">Contacts</a></li>
+            <p>Learn about local culture and historical places.</p>
 
-    <section>
+            <p>
+                Questions? Visit the
+                <a href="#contact">CONTACT</a>
+                section to inquire about tours.
+            </p>
+        </article>
+    </section>
 
-    <h2>TOUR2:Mountain & Heritage Tour</h2>
-    <p>Explore Taal Volcano and historical churches. A perfect mix of nature and history.</p>
+    <!-- TOUR PACKAGES -->
+    <section id="tour">
+        <h2>TOUR PACKAGES</h2>
 
-    <li><a href="#contact">Contacts</a></li>
+        <article class="beach">
+            <h3>Package 1: Beach Escape</h3>
+            <p>Enjoy beautiful beaches and relaxing coastal scenery.</p>
+            <a href="#contact">CONTACT</a>
+        </article>
 
-    <h3>TOUR3:Food Trip</h3>
-    <p>Taste authentic Batangas coffee, bulalo, and local delicacies from famous spots.</p>
+        <article class="nature">
+            <h3>Package 2: Nature Adventure</h3>
+            <p>Explore nature and scenic outdoor destinations.</p>
+            <a href="#contact">CONTACT</a>
+        </article>
 
+        <article class="heritage-culture">
+            <h3>Package 3: Heritage &amp; Culture</h3>
+            <p>Discover Batangas history, traditions, and culture.</p>
+            <a href="#contact">CONTACT</a>
+        </article>
+
+        <!-- TOUR TABLE -->
         <table>
+            <caption>Sample Tour Durations</caption>
+
             <thead>
-                
-              <tr>
-                <th>Tours</th>
-                <th>Duration</th>
-                <th>Inquiry</th>
-          </tr>
-             <tr>
-              <td>Taal Heritage Tour</td>
-              <td>Half Day</td>
-              <td><a href="#contact">Ask for details</a></td>
-       </tr>
-           <tr>
+                <tr>
+                    <th scope="col">Tour</th>
+                    <th scope="col">Duration</th>
+                    <th scope="col">Inquiry</th>
+                </tr>
+            </thead>
 
-           <td>Laiya Beach Tour</td>
-           <td>One Day</td>
-           <td><a href="#contact">Ask for details</a></td>
-         </tr>
-           <tr>
+            <tbody>
+                <tr>
+                    <th scope="row">Taal Heritage Tour</th>
+                    <td>Half Day</td>
+                    <td><a href="#contact">Ask for details</a></td>
+                </tr>
 
-               <td>Batangas Nature Tour</td>
-               <td>One Day</td>
-               <td><a href="#contact">Ask for details</a></td>
-        </tr>
-          </table>
-          !-- WHY CHOOSE US -->
-<h2>How to inquire:</h2>
-<ul>
-  <li>Local knowledge</li>
-  <li>Clear tour information</li>
-  <li>Simple inquiry process</li>
-</ul>
+                <tr>
+                    <th scope="row">Laiya Beach Tour</th>
+                    <td>One Day</td>
+                    <td><a href="#contact">Ask for details</a></td>
+                </tr>
 
-<h2>What To Bring:</h2>
-<ol>
- <li>Local guides who know Batangas best</li>
-        <li>Affordable and transparent pricing</li>
-        <li>Safe and comfortable travel</li>
-        <li>Personalized tours just for you</li>
-</ol>
+                <tr>
+                    <th scope="row">Batangas Nature Tour</th>
+                    <td>One Day</td>
+                    <td><a href="#contact">Ask for details</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
+    <!-- WHY CHOOSE US -->
+    <section id="why">
+        <h2>WHY CHOOSE US</h2>
 
+        <p style="color: green; font-size: 16px;">
+            Discover Batangas through its beautiful destinations,
+            rich culture, and exciting adventures.
+        </p>
 
-           <!-- WHY CHOOSE US -->
-         <section id="why choose us">
-        <h2>why choose us</h2>
-       <ul>
-  <li>Local knowledge</li>
-  <li>Clear tour information</li>
-  <li>Simple inquiry process</li>
-   </ul>
-           </section>
-        <!-- CONTACT US -- ITO ANG PUPUNTAHAN -->
-           <h2 id="contact-us">Contact Us</h2>
-            <p>Contact us if you would like to ask about one of our tours.</p>
-            <p>Interested in a tour? Please contact us using the following below.</p>
+        <ul>
+            <li>Explore beautiful destinations.</li>
+            <li>Discover local history and culture.</li>
+            <li>Choose from different tour packages.</li>
+        </ul>
+    </section>
 
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>CONTACT</h2>
 
+        <p>
+            Interested in a tour? You can ask for information
+            about destinations and schedules.
+        </p>
 
-<p><strong>Email:</strong> <a href="mailto:sample-email@gmail.com">sample-email@gmail.com</a></p>
-<p><strong>Contact #:</strong> 000-000-000</p>
+        <h3>
+            Sample Email:
+            <a href="mailto:lkbybtngs@gmail.com">
+                lkbybtngs@gmail.com
+            </a>
+        </h3>
 
-         <h3>Inquiry Form Control</h3>
-         <form>
-         <label>Your name{required}</name>:</label>
-         <input type="text" name="your-name">
-     <br>
-     <br>
-                <form>
-         <label>Email{required}</name>:</label>
-         <input type="text" name="Email">
-     <br>
-     <br>
-    <form action="#contact" method="get">
-         <label for ="tour-choice">tour(required)</label>
-         <select id="tour-choice" name="tour_choice" type="text">
-     
-            <option value="choose tour">choose tour</option>
-            <option value="taal heritage ">taal heritage </option>
-            <option value="beach tour">beach tour</option>
-            <option value="batangas nature tour">batangas nature tour</option>
-     
-        </select>
-     </form>
+        <h3>
+            Sample Phone:
+            <a href="tel:09123456789">0912 345 6789</a>
+        </h3>
+
+        <p>
+            These are classroom placeholders. No real inquiry
+            or booking service is available.
+        </p>
+
+        <h3>Sample Inquiry Form</h3>
+
+        <p>
+            Practice only: this form does not send or store an inquiry.
+        </p>
+
+        <form action="#contact" method="get">
+
+            <div>
+                <label for="name">Enter Name:</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required>
+            </div>
+
             <br>
-     
-        <label for="message (optional)">message (optional) </label>      
-        <textarea id="message (optional)" name=message (optional) rows="3" cols="38"></textarea>
-     
-     
-     
-     <fieldset>
-        <legend>Preferred Contact Method:</legend>
-        <input type="radio" id="contact-email" name="contact-method" value="email" required>
-        <label for="contact-email">Email</label><br>
-        <input type="radio" id="contact-phone" name="contact-method" value="phone">
-        <label for="contact-phone">Phone</label><br>
-    </fieldset>
-    <br>
- <button type="submit">check demo form</button>
-</br>
-<li><a href="#contact">Contacts</a></li>
 
-</section>
+            <div>
+                <label for="email">Enter Email:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required>
+            </div>
 
-<section id="why">
-    <h2>Why Choose Us</h2>
-    <ul>
-        <li>Local guides who know Batangas best</li>
-        <li>Affordable and transparent pricing</li>
-        <li>Safe and comfortable travel</li>
-        <li>Personalized tours just for you</li>
-    </ul>
-</section>
+            <br>
 
-<section id="contact">
-    <h2>Contact Us</h2>
-    <p>Location: Batangas City, Philippines</p>
-    <p>Phone: 0917-123-4567</p>
-    <p>Email: info@lakbaybatangas.ph</p>
-    <p>Hours: Monday to Saturday, 8:00 AM – 5:00 PM</p>
-</section>
+            <div>
+                <label for="tour-choice">Tour:</label>
+
+                <select id="tour-choice" name="tour_choice" required>
+                    <option value="">Choose tour package</option>
+                    <option value="taal-heritage-tour">
+                        Taal Heritage Tour
+                    </option>
+                    <option value="beach-tour">Beach Tour</option>
+                    <option value="batangas-nature-tour">
+                        Batangas Nature Tour
+                    </option>
+                </select>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="message">Message (Optional):</label>
+                <br>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    cols="40"
+                    placeholder="Enter your message"></textarea>
+            </div>
+
+            <br>
+
+            <fieldset>
+                <legend>Preferred Demo Response</legend>
+
+                <input
+                    type="radio"
+                    id="response-email"
+                    name="response_method"
+                    value="Email">
+
+                <label for="response-email">Email</label>
+
+                <input
+                    type="radio"
+                    id="response-none"
+                    name="response_method"
+                    value="No reply needed">
+
+                <label for="response-none">No reply needed</label>
+            </fieldset>
+
+            <br>
+
+            <button type="submit">Check Demo Form</button>
+
+        </form>
+    </section>
+
+</main>
 
 <footer>
-    <p>Follow us on Facebook: facebook.com/lakbaybatangastours</p>
-    <p>Email: info@lakbaybatangas.ph</p>
-    <p>Contact: 0917-123-4567</p>
-    <p>Location: Batangas City, Philippines</p>
-<p>&copy; 2026 Lakbay Batangas Tours. All rights reserved.</p>
+    
+    <p>&copy; 2026 Lakbay Batangas Tours</p>
 </footer>
+
+</body>
+</html>
+File:Taal Lake.jpg - Wikimedia Commons
+commons.wikimedia.org
+

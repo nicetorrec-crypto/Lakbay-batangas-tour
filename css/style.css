@@ -1,68 +1,468 @@
-header{
-    background: #07415c;
-    color: #dee5e9;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items:  center;
+root {
+    --cream: #fff8ed;
+    --light-sand: #f5e6d0;
+    --terracotta: #c45d3a;
+    --sunset-orange: #e98b45;
+    --dark-brown: #4b2e23;
+    --soft-brown: #795548;
+    --white: #ffffff;
+    --gold: #e6b566;
+}
+
+/* GENERAL SETTINGS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
     font-family: Arial, Helvetica, sans-serif;
- }
-
-ul {
-
-  display: flex;
-  list-style: none;
-  gap: 20px;
+    background: var(--cream);
+    color: var(--dark-brown);
+    line-height: 1.7;
 }
 
-nav a{
-   color:#e2ebf0;
-   
-}
-h3{
-  color:#2a789c;
-}
-h2{
-  color: #2a789c;
-}
-p{
- color: #21566e;
-}
-nav a:hover {
-        background-color: #250697;  
-        color: #3979d8;
-}
-footer{
-     background: #50a0c5;
-     color:#5faed3:
+/* HEADER */
+header {
+    background: linear-gradient(135deg, var(--terracotta), var(--sunset-orange));
+    color: var(--white);
+    text-align: center;
+    padding: 30px 20px 20px;
 }
 
-   .featured-tour {
-  background-color: #e7f4ef;
+header h1 {
+    font-size: 36px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
 }
 
-.featured-tour {
-  background-color: #ffffcf;
+/* NAVIGATION */
+nav {
+    margin-top: 20px;
 }
 
-section h3{
-  background-color: palegoldenrod;
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
 }
 
-#about p {
-  color: #0e1213;
+.nav-links a {
+    display: block;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 25px;
+    transition: 0.3s;
 }
 
-section{
-color:#c28330
+.nav-links a:hover {
+    background: #fff0d9;
+    color: var(--terracotta);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px #4b2e2333;
 }
 
-a:focus-visible {
- 
-  outline: 3px palegoldenrod;
-  outline-offset:3px;
-  background-color: #0bec17;
-  
-
+/* MAIN CONTENT */
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
 }
- 
+
+/* ALL SECTIONS */
+section {
+    background: var(--white);
+    margin-bottom: 30px;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 5px 18px rgba(75, 46, 35, 0.08);
+}
+
+section h2 {
+    color: var(--terracotta);
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+section p {
+    margin-bottom: 15px;
+}
+
+section a {
+    color: var(--terracotta);
+    font-weight: bold;
+}
+
+section a:hover {
+    color: var(--sunset-orange);
+}
+
+/* HOME SECTION */
+#home {
+    background:
+        linear-gradient(rgba(8, 52, 109, 0.411), rgba(14, 32, 82, 0.986)),
+        url("../assets/images/taal-lake.jpg");
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#home h2 {
+    color: var(--gold);
+    font-size: 36px;
+}
+
+#home a {
+    display: inline-block;
+    background: var(--sunset-orange);
+    color: var(--white);
+    padding: 12px 22px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+#home a:hover {
+    background: var(--terracotta);
+}
+
+/* ABOUT SECTION */
+#about {
+    text-align: center;
+}
+
+#about figure {
+    margin: 25px auto;
+}
+
+#about img {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(75, 46, 35, 0.15);
+}
+
+#about figcaption {
+    color: var(--soft-brown);
+    font-style: italic;
+    margin-top: 12px;
+}
+
+/* FEATURED TOUR */
+#featured h2 {
+    text-align: center;
+}
+
+.taal-heritage {
+    background: var(--light-sand);
+    padding: 25px;
+    border-left: 6px solid var(--terracotta);
+    border-radius: 10px;
+}
+
+.taal-heritage h3 {
+    color: var(--terracotta);
+    margin-bottom: 10px;
+}
+
+/* TOUR PACKAGE CARDS */
+#tour > h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.beach,
+.nature,
+.heritage-culture {
+    padding: 25px;
+    margin: 25px 0;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.beach {
+    background: #ffe0b2;
+    border-left: 8px solid #f57c00;
+    color: #5d3425;
+}
+
+.nature {
+    background: #dceccb;
+    border-left: 8px solid #558b2f;
+    color: #304525;
+}
+
+.heritage-culture {
+    background: #f2d0c2;
+    border-left: 8px solid #b85c38;
+    color: #5d3024;
+}
+
+/* PACKAGE HEADINGS */
+.beach h3 {
+    color: #c45d00;
+}
+
+.nature h3 {
+    color: #386522;
+}
+
+.heritage-culture h3 {
+    color: #963f28;
+}
+
+/* PACKAGE BUTTONS */
+.beach a,
+.nature a,
+.heritage-culture a {
+    display: inline-block;
+    padding: 10px 22px;
+    margin-top: 15px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.beach a {
+    background: #e87522;
+}
+
+.nature a {
+    background: #558b2f;
+}
+
+.heritage-culture a {
+    background: #b85c38;
+}
+
+/* PACKAGE HOVER EFFECTS */
+.beach:hover,
+.nature:hover,
+.heritage-culture:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px #00000020;
+}
+
+.beach a:hover,
+.nature a:hover,
+.heritage-culture a:hover {
+    filter: brightness(0.85);
+}
+
+/* TOUR DURATION TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background: var(--white);
+}
+
+caption {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--terracotta);
+    padding: 15px;
+}
+
+th,
+td {
+    border: 1px solid var(--light-sand);
+    padding: 14px;
+    text-align: left;
+}
+
+thead {
+    background: var(--terracotta);
+    color: var(--white);
+}
+
+tbody tr:nth-child(even) {
+    background: var(--cream);
+}
+
+tbody tr:hover {
+    background: var(--light-sand);
+}
+
+/* WHY CHOOSE US */
+#why {
+    background: var(--light-sand);
+}
+
+#why ul {
+    padding-left: 25px;
+}
+
+#why li {
+    margin-bottom: 10px;
+}
+
+/* CONTACT SECTION */
+#contact h2 {
+    border-bottom: 3px solid var(--gold);
+    padding-bottom: 10px;
+}
+
+#contact h3 {
+    font-size: 17px;
+    margin: 15px 0;
+}
+
+/* INQUIRY FORM */
+form {
+    background: var(--cream);
+    padding: 25px;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    max-width: 550px;
+    padding: 12px;
+    border: 1px solid #d8bba2;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: inherit;
+    background: var(--white);
+    color: var(--dark-brown);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid var(--sunset-orange);
+    border-color: var(--terracotta);
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* RADIO BUTTONS */
+fieldset {
+    border: 1px solid #5f0c0c;
+    border-radius: 8px;
+    padding: 18px;
+}
+
+legend {
+    font-weight: bold;
+    color: var(--terracotta);
+    padding: 0 8px;
+}
+
+input[type="radio"] {
+    margin: 10px 5px 10px 0;
+}
+
+fieldset label {
+    display: inline;
+    margin-right: 15px;
+}
+
+/* SUBMIT BUTTON */
+button[type="submit"] {
+    background: var(--terracotta);
+    color: var(--white);
+    border: none;
+    padding: 13px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+    background: var(--sunset-orange);
+    transform: translateY(-2px);
+}
+
+/* FOOTER */
+footer {
+    background: var(--dark-brown);
+    color: var(--white);
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 27px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .nav-links a {
+        padding: 8px 15px;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    section {
+        padding: 22px;
+    }
+
+    #home {
+        min-height: 300px;
+    }
+
+    #home h2 {
+        font-size: 28px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+
+    form {
+        padding: 15px;
+    }
+}
+```
